@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    /* Styles pour la navbar (identiques à votre code précédent) */
+    .row{
+      background-color: #9c7171;
+      text-align: center;
+      justify-content: center;
+    }
+    .col-md-8{
+            
+            text-align: center;
+            justify-content: center;
+        }
+    .footer {
+            background-color: #9c7171;
+            color: #131212;
+            padding: 20px 0;
+        }
+
+        .footer-icons a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+    .container{
+        flex-direction: row;
+        background-color: #9c7171;
+    }
+    
+    .row > .col-md-4 {
+      width: 50%;
+}
+.row > .col-md-8{
+      width: 50%;
+}
+    
+    .carte1{
+        text-align: center;
+    }
+    .visage{
+        border-radius: 50%;
+        overflow: hidden;
+        max-width: 90%;
+  max-height: 90%;
+
+    }
+    
+    .grandeCarte{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px;
+        border: transparent ;
+    }
+    .cardd {
+        display: inline-block; 
+        justify-content: center;
+        /* Afficher les cartes en ligne */
+        margin: auto;
+        
+}
+.card {
+        display: inline-block; 
+        justify-content: center;
+        /* Afficher les cartes en ligne */
+        margin: auto;
+        
+}
+
+
+    .navbar {
+      overflow: hidden;
+      background-color: #997171;
+    }
+
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      background-color: #961b1b;
+      color: rgb(240, 113, 113);
+    }
+
+    .search-container {
+      float: right;
+    }
+
+    .search-container input[type="text"] {
+      padding: 6px;
+      margin-top: 8px;
+      margin-right: 16px;
+      border: none;
+      font-size: 17px;
+    }
+
+    .search-container button {
+      padding: 6px 10px;
+      margin-top: 8px;
+      background: #f0b6b6;
+      font-size: 17px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .navbar img {
+      float: left;
+      height: 50px;
+      margin: 10px 10px;
+    }
+
+    /* Styles pour le carrousel */
+    .carousel-inner img {
+      width: 100%;
+      height: 400px; /* Ajustez la hauteur selon vos besoins */
+    }
+    .footer-icons a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+            justify-content: center;
+            text-align: center;
+        }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Inclure Bootstrap CSS à partir d'un CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="navbar">
+  <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5b8de3133323131.61badc89a1d01.png" alt="Logo">
+  <a href="#">Accueil</a>
+  <a href="#">Services</a>
+  <a href="#">Contacts</a>
+  <div class="search-container">
+    <form>
+      <input type="text" placeholder="Rechercher..." name="search">
+      <button type="submit">Rechercher</button>
+    </form>
+  </div>
+</div>
+
+<!-- Carrousel Bootstrap -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicateurs -->
+  <ul class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ul>
+
+  <!-- Slides du carrousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://www.lalique.com/media/categories/1992.jpg" alt="Image 1">
+    </div>
+    <div class="carousel-item">
+      <img src="https://femmesdumaroc.com/wp-content/uploads/2022/12/kashabali.jpg" alt="Image 2">
+    </div>
+    <div class="carousel-item">
+      <img src="https://fac.img.pmdstatic.net/fit/https.3A.2F.2Fi.2Epmdstatic.2Enet.2Ffac.2F2021.2F01.2F29.2Fcd4382e2-3498-4807-b0d0-f578059e7fcf.2Ejpeg/970x485/quality/80/crop-from/center/focus-point/627%2C537/bijoux-de-famille-comment-savoir-si-c-est-du-toc-ou-un-tresor.jpeg" alt="Image 3">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.jardin-des-bijoux.fr/cdn/shop/collections/bijoux-minimalistes.jpg?v=1694299525" alt="Image 4">
+    </div>
+  </div>
+
+  <!-- Contrôles du carrousel -->
+  <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+<div class = "grandeCarte">
+<div class="card" style="width: 18rem;">
+    <div class="carte">
+    <img src="https://www.jardin-des-bijoux.fr/cdn/shop/files/bracelet-vegas-acier-inoxydable-or-jardin-des-bijoux-416.webp?v=1695847037&width=2000" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Bracelet en Or</h5>
+      <p class="card-text">Élevez votre style avec notre bracelet exquis : l'accessoire parfait pour exprimer votre personnalité et briller en toutes occasions !</p>
+      <a href="#" class="btn btn-primary">Voir plus</a>
+    </div></div></div>
+    <div class="card" style="width: 18rem;">    
+    <div class="carte">
+        <img src="https://ma.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/13/341916/1.jpg?4685" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Collier Diamant</h5>
+          <p class="card-text">Sublimez votre beauté avec notre collier élégant : l'accessoire ultime pour ajouter une touche d'éclat à votre look !</p>
+          <a href="#" class="btn btn-primary">Voir plus</a>
+        </div>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">    
+    <div class="carte">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5ehoxG1O7srlw0lDGMVPBRzF5LKrh4rDyPg&usqp=CAU" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Bague Or Diamant</h5>
+          <p class="card-text">Captivez tous les regards avec notre bague exceptionnelle : l'accessoire qui saura sublimer chaque moment de votre vie.</p>
+          <a href="#" class="btn btn-primary">Voir plus</a>
+        </div>
+    </div>
+  </div>
+  </div>
+  <div><p><h4>Notre équipe : </h4></p></div>
+  <div class = "grandeCarte"> 
+    <div class="cardd" style="width: 18rem;">
+        <div class="carte1">
+        <img src="https://www.fany-store.com/cdn/shop/articles/bague-vermeil-18-carats-nesf-daera-manal-paris_700x_8cbab1b9-d6dc-47dc-b27a-6e2217549f9f.jpg?v=1620442155" class="visage" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Sanae Ghali </h5>
+          <p class="card-text">La créatrice derrière Bijoux Angèle. Sa passion pour l'art de la joaillerie donne vie à chaque pièce que nous créons.</p>
+          
+        </div></div></div>
+        <div class="cardd" style="width: 18rem;">    
+        <div class="carte1">
+            <img src="https://egeriephotographies.com/wp-content/uploads/2020/04/Femme.jpg"  class="visage" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Meriem Ghennam</h5>
+              <p class="card-text">Notre designer, le cerveau créatif derrière chaque bijou de notre collection.</p>
+              
+            </div>
+        </div>
+      </div>
+      <div class="cardd" style="width: 18rem;">    
+        <div class="carte1">
+            <img src="https://previews.123rf.com/images/kho/kho1512/kho151200041/48853173-jolie-femme-portrait-de-jeune-femme-s%C3%A9duisante-image-teint%C3%A9e.jpg"  class="visage rounded-circle" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sarah Dinar</h5>
+              <p class="card-text">Notre talentueuse artisane, est l'âme créative qui façonne chaque bijou à la main.</p>
+            </div>
+        </div>
+      </div>
+      </div>
+      <div class="card mb-3" style="max-width: 1500px;">
+        <div class="row g-0">
+          
+          <div class="col-md-8">
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-icons">
+                        <div><a href="tel:+1234567890"><i class="fas fa-phone"></i><p><span style="font-size: 25px;">+212 674595812</span></p> </a>
+                        </div>
+                        <div><a href="mailto:contact@example.com"><i class="fas fa-envelope"></i> <p><span style="font-size: 25px;">Angele.bijoux@yahoo.com</span></p></a></div>
+                      <div><a href="#"><i class="fas fa-map-marker"></i> <p><span style="font-size: 25px;">Maarif, Casablanca</span></p></a></div>
+                    </div>
+                </div>
+            </footer>
+          </div> 
+          <div class="col-md-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13300.624592493505!2d-7.643971749999999!3d33.549319100000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda62d3b8e81690d%3A0xb2f7bc0e40016ff2!2sMarjane%20Californie!5e0!3m2!1sfr!2sma!4v1698252384444!5m2!1sfr!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+  <!-- Inclure Bootstrap JavaScript (après jQuery) à partir d'un CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
